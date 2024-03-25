@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="26dp"
+    android:paddingRight="26dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Data Siswa"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIK" />
+
+    <EditText
+        android:id="@+id/editTextNik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:elevation="1dp"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/hint_color"
+        app:strokeColor="#8F8F8F"
+        app:strokeWidth="1dp"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama" />
+
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:elevation="1dp"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/hint_color"
+        app:strokeColor="#8F8F8F"
+        app:strokeWidth="1dp"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat" />
+
+    <EditText
+        android:id="@+id/editTextAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:elevation="1dp"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/hint_color"
+        app:strokeColor="#8F8F8F"
+        app:strokeWidth="1dp"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kota" />
+
+    <Spinner
+        android:id="@+id/editTextKota"
+        android:entries="@array/daftar_kota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin" />
+
+
+
+    <RadioGroup
+        android:id="@+id/editTextJk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/laki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-Laki"/>
+
+        <RadioButton
+            android:id="@+id/perempuan"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"/>
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Umur" />
+
+    <EditText
+        android:id="@+id/editTextUmur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:elevation="1dp"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/hint_color"
+        app:strokeColor="#8F8F8F"
+        app:strokeWidth="1dp"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:elevation="2dp"
+        android:text="Input Data" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tampil Data" />
+
+</LinearLayout>
+
